@@ -1,0 +1,32 @@
+2022-05-27 11:41:51,658 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-27 11:41:51,965 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-27 11:41:52,224 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9081"]
+2022-05-27 11:41:52,247 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9081 (http) with context path '/api/v1/tarjetas'
+2022-05-27 11:41:52,626 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ApiTarjetasApplication in 6.652 seconds (JVM running for 7.551)
+2022-05-27 11:53:13,743 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-27 11:53:13,743 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9081-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-27 11:53:13,745 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9081-exec-1] Completed initialization in 2 ms
+2022-05-27 11:58:48,689 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9081-exec-3] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.ibm.academia.restapi.tarjetas.controladores.PassionController.guardar(com.ibm.academia.restapi.tarjetas.modelo.entidades.Passion,org.springframework.validation.BindingResult)]
+2022-05-27 12:00:50,998 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9081-exec-5] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.ibm.academia.restapi.tarjetas.enumeradores.TipoPassion` from String "SHOPPING 2": not one of the values accepted for Enum class: [BUSINESS, HELP, SHOPPING, TRAVELS, SPORTS, STYLE]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.ibm.academia.restapi.tarjetas.enumeradores.TipoPassion` from String "SHOPPING 2": not one of the values accepted for Enum class: [BUSINESS, HELP, SHOPPING, TRAVELS, SPORTS, STYLE]<EOL> at [Source: (PushbackInputStream); line: 3, column: 20] (through reference chain: com.ibm.academia.restapi.tarjetas.modelo.entidades.Passion["tipoPassion"])]
+2022-05-27 12:01:43,231 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-27 12:01:43,234 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-27 12:01:43,238 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-27 12:01:47,795 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-05-27 12:01:47,802 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ApiTarjetasApplication using Java 18.0.1.1 on DESKTOP-JR6TLK9 with PID 7436 (C:\Users\Dell\Documents\IBM\APITarjetas\target\classes started by Dell in C:\Users\Dell\Documents\IBM\APITarjetas)
+2022-05-27 12:01:47,802 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-05-27 12:01:47,855 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-27 12:01:47,856 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-27 12:01:48,950 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-27 12:01:49,013 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2022-05-27 12:01:49,855 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9081 (http)
+2022-05-27 12:01:49,868 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9081"]
+2022-05-27 12:01:49,869 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-27 12:01:49,869 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-05-27 12:01:49,955 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-27 12:01:49,955 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2099 ms
+2022-05-27 12:01:50,003 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-27 12:01:50,224 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-27 12:01:50,233 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/tarjetasdb'
+2022-05-27 12:01:50,415 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-27 12:01:50,476 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.33
+2022-05-27 12:01:50,621 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
